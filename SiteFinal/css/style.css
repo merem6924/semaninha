@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background: white;
+}
+
+/*Espaço principal/base do footer*/
+.container_base {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  border-top: 1px solid black;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
+  background-color: white;
+}
+
+/*Campo da foto de grupo */
+.container_foto_grupo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Foto de grupo */
+.foto_grupo {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 8px;
+  background-color: gray
+}
+
+/*Campo de informações */
+.container_conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Campo dos nomes dos participantes */
+.container_nomes {
+  font-size: 14px;
+  margin-bottom: 1.5rem;
+}
+
+/*Negrito no nome do gerente */
+.container_nomes strong {
+  font-weight: 600;
+}
+
+/*Descrição do porqur da noticia */
+.descricao {
+  margin-top: 10px;
+}
+
+/*Campo das fontes da noticia */
+.container_fontes {
+  display: flex;
+  gap: 2rem;
+  font-size: 12px;
+}
+
+/*Creditos e direitos autorais*/
+.container_copyright {
+  border-top: 1px solid #aaa;
+  background-color: #f2f2f2;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px 10px;
+  line-height: 1.3;
+}
+
+/*Responsividade*/
+@media (max-width: 768px) {
+  .container_base {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .container_conteudo {
+    align-items: center;
+  }
+
+  .container_fontes {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .foto_grupo {
+    max-width: 180px;
+  }
+}

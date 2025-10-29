@@ -1,0 +1,53 @@
+.container{
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  align-items: center;
+
+  justify-content: center;
+  padding: 40px 20px;
+
+  display: flex;
+  width: 100%;
+  padding: 20px;
+
+
+  box-sizing: border-box;
+
+
+
+}
+
+
+.carrosel{
+  display: flex;
+  grid-auto-flow: column;
+  gap:1.2rem;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+
+
+}
+
+
+.card{
+  max-width: 2000px;
+  min-width: 1200px;
+  height: 600px;
+  width: 1200px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  overflow: hidden; 
+}
+
+.card img {
+  width: 100%;         
+  height: 100%;
+  object-fit: cover;   /* corta a imagem mantendo a proporção muhehehe!*/
+
+}
+
